@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Display full name and student ID -->
+    <TextView
+        android:id="@+id/tvStudentInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eugene Denteh - 1558707"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Button to start SecondActivity using an explicit intent -->
+    <Button
+        android:id="@+id/btnExplicit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Activity Explicitly"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to start SecondActivity using an implicit intent -->
+    <Button
+        android:id="@+id/btnImplicit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Activity Implicitly"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to start ThirdActivity for image capture -->
+    <Button
+        android:id="@+id/btnViewImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Image Activity" />
+</LinearLayout>

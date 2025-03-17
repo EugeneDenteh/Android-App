@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Software Engineering Challenges"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Challenge 1 -->
+        <TextView
+            android:id="@+id/tvChallenge1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Rapid changes"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Challenge 2 -->
+        <TextView
+            android:id="@+id/tvChallenge2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Low tolerance"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Challenge 3 -->
+        <TextView
+            android:id="@+id/tvChallenge3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Unstable and Dynamic Environment"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Challenge 4 -->
+        <TextView
+            android:id="@+id/tvChallenge4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Tool Support"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Challenge 5 -->
+        <TextView
+            android:id="@+id/tvChallenge5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Low Security and Privacy Awareness"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Button to return to MainActivity -->
+        <Button
+            android:id="@+id/btnMainActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Main Activity" />
+
+    </LinearLayout>
+</ScrollView>
