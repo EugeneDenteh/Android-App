@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.assignment2">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Add Camera Permission -->
+    <!-- Camera Permission -->
     <uses-permission android:name="android.permission.CAMERA" />
-
-    <!-- Optional but recommended -->
     <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <!-- Define custom permission -->
+    <permission
+        android:name="com.example.assignment2.MSE412"
+        android:protectionLevel="dangerous"
+        android:label="@string/permission_label"
+        android:description="@string/permission_description" />
+
+    <!-- Use the permission -->
+    <uses-permission android:name="com.example.assignment2.MSE412" />
 
     <application
         android:allowBackup="true"
@@ -24,15 +31,16 @@
             </intent-filter>
         </activity>
 
+        <!-- Apply custom permission to SecondActivity -->
         <activity android:name=".SecondActivity"
-            android:exported="true">
+            android:exported="true"
+            android:permission="com.example.assignment2.MSE412">
             <intent-filter>
                 <action android:name="com.example.assignment2.SECOND_ACTIVITY" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <!-- Add ThirdActivity to manifest -->
         <activity android:name=".ThirdActivity"
             android:exported="false" />
 
